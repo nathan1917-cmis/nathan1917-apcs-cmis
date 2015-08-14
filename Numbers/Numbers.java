@@ -8,8 +8,8 @@ public class Numbers
         String iOne = JOptionPane.showInputDialog("Pick a number.");
         String iTwo = JOptionPane.showInputDialog("Pick another number.");
         
-        int one = Integer.parseFloat(iOne);
-        int two = Integer.parseFloat(iTwo);
+        int one = Integer.parseInt(iOne);
+        int two = Integer.parseInt(iTwo);
         
         int oOne = one + two;
         int oTwo = one - two;
