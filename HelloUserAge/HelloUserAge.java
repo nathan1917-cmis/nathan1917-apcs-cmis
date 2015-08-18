@@ -8,7 +8,7 @@ public class HelloUserAge
         String inputAge = JOptionPane.showInputDialog("How old are you?");
         
         System.out.println("Hello, " + inputName + "! You are " + inputAge + " years old.");
-        }
+        } // end method main
         
-    }
+    } // end class HelloUserAge
     
