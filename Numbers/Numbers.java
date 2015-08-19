@@ -8,14 +8,14 @@ public class Numbers
         String iOne = JOptionPane.showInputDialog("Pick a number.");
         String iTwo = JOptionPane.showInputDialog("Pick another number.");
         
-        float one = Float.parseFloat(iOne);
-        float two = Float.parseFloat(iTwo);
+        double one = Double.parseDouble(iOne);
+        double two = Double.parseDouble(iTwo);
         
-        float oOne = one + two;
-        float oTwo = one - two;
-        float oThree = one * two;
-        float oFour = one / two;
-        float oFive = one % two;
+        double oOne = one + two;
+        double oTwo = one - two;
+        double oThree = one * two;
+        double oFour = one / two;
+        double oFive = one % two;
        
         System.out.println(iOne + " + " + iTwo + " = " + oOne + "\n");
         System.out.println(iOne + " - " + iTwo + " = " + oTwo + "\n");
