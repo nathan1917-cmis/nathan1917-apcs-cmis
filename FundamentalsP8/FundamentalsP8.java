@@ -9,13 +9,15 @@ public class FundamentalsP8
             {
             System.out.print(favArtist[index] + ", ");
             }//end for
-        while
+        Random rand = new Random();
+        int randNum = rand.nextInt((2 - 0) + 1);
         favArtist[randNum] = "Michael Jackson";
         System.out.println("\n");
         for(int index = 0; index < favArtist.length; index++)
             {
             System.out.println(favArtist[index]);
             }//end for
+        System.out.println("\n");
         for(int index = 0; index < favArtist.length; index++)
             {
             if(favArtist[index].equals("Michael Jackson"))
