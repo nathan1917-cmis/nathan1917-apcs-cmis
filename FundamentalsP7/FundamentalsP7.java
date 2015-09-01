@@ -11,7 +11,7 @@ public class FundamentalsP7
             {
             Random rand = new Random();
             int randNum = rand.nextInt((100 - 0) + 1);
-            if(randNum >= 50)
+            if(randNum >= (Math.random() * 100) )
                {
                int finNum = randNum*-1;
                arrayA[index] = finNum;
