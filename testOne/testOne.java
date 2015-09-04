@@ -24,18 +24,22 @@ public class testOne
             if (intVal % 2 == 0)
                 {
                 String e = "E";
-                for (int i = 1; i < intVal; i++)   
+                int i = 1;
+                while (i < intVal)   
                     {
                     e += "E";
+                    i++;
                     }//end for
                 System.out.println(index + ": " + e + arrayA[index]);     
                 }//end if
             else
                 {
                 String o = "O";
-                for (int i = 1; i < intVal; i++)
+                int i = 1;
+                while ( i < intVal)
                     {
                     o += "O";
+                    i++;
                     }//end for
                 System.out.println(index + ": " + o + arrayA[index]);
                 }//end eles
