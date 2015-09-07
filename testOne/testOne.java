@@ -1,5 +1,6 @@
 import javax.swing.JOptionPane;
-import java.util.Random;
+
+
 public class testOne
     {
     public static void main ( String[] args)
@@ -29,7 +30,7 @@ public class testOne
                     {
                     e += "E";
                     i++;
-                    }//end for
+                    }//end while
                 System.out.println(index + ": " + e + arrayA[index]);     
                 }//end if
             else
@@ -40,7 +41,7 @@ public class testOne
                     {
                     o += "O";
                     i++;
-                    }//end for
+                    }//end while
                 System.out.println(index + ": " + o + arrayA[index]);
                 }//end eles
             
