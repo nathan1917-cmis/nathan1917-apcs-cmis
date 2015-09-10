@@ -15,10 +15,11 @@ public class Histogram
             Random rand = new Random();
             int randNum = rand.nextInt((99 - 0) + 0);
             rands[index] = randNum;
-            System.out.println(rands[index]);
             }//end for
         
         int[] repeat = new int[userint];
+        int occurances = 0;
+        int numIndex = 0;
         for (int i = 0; i <= 99; i++)
             {
              String hash = "";
@@ -32,18 +33,26 @@ public class Histogram
                     
                     
                 }//end for
-             
-             System.out.println(i + ": " + hash);   
+             if (hash.length() >= occurances)
+                {
+                occurances = hash.length();
+                numIndex = i;
+                }//end if
+             System.out.println(i + ": " + hash);  
                 
             }//end for 
         Arrays.sort(rands);
-        for (int index = 0; index < rands.length; index++)
-            {
-            System.out.println(rands[index]);
-            }
         System.out.println("MIN: " + rands[0]);
         System.out.println("MAX: " + rands[(rands.length -1)]);
-        
+        int sum = 0;
+        for (int index = 0; index < rands.length; index++)
+            {
+            sum += rands[index];
+            }//end for
+        System.out.println("SUM: " + sum);
+        float average = (float) sum / (float) rands.length;
+        System.out.println("AVG: " + average);
+        System.out.println("MST: " + numIndex);
         }//end method Main
         
         
