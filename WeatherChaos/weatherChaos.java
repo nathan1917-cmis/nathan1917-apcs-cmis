@@ -66,14 +66,14 @@ public class weatherChaos
                     {
                     maxSwing = swing;
                     maxSwingDay = i + 1;
-                    }//end
+                    }//end if
                 total += temps[i];
                 System.out.println(day + "\t" + temps[i] + "\t" + swing + "\t" + description);
-                                }//end for
+                }//end for
             System.out.println("The maximum temperature was " + max + " on day " + maxDay);
             System.out.println("The minimum temperature was " + min + " on day " + minDay);
             System.out.println("The average temperature was " + (double) (total) / (double) user);
-            System.out.println("The biggest temperature swing was " + maxSwing + " between day " + (maxSwingDay - 1) + " and " + maxSwingDay);
+            System.out.println("The biggest temperature swing was " + maxSwing + " between days " + (maxSwingDay - 1) + " and " + maxSwingDay);
         }//end if
         else
             {
