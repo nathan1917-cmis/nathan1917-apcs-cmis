@@ -26,7 +26,7 @@ public class weatherChaos
                 day = i + 1;
                 if (i > 0)
                     {
-                    swing = temps[i] - temps[i - 1];
+                    swing = Math.abs(temps[i] - temps[i - 1]);
                     }//end if
                 else
                     {
