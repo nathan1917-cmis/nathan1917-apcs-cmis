@@ -1,9 +1,12 @@
+import javax.swing.JOptionPane;
 public class Song
     {
     private String title;
     private double length;
     private String views;
     private int yearReleased;
+    private String user;
+    private String pass;
     public Song()
         {
         title = "Fight the Power";
@@ -31,6 +34,16 @@ public class Song
         }//end getYearReleased
     public void setYearReleased(int yearReleased)
         {
-        this.yearReleased = yearReleased;
+        user = JOptionPane.showInputDialog("Input Username: ");
+        pass = JOptionPane.showInputDialog("Input Password: ");
+        if (user.equals("nathan") && pass.equals("1"))
+            {
+            this.yearReleased = yearReleased;
+            }//end if
+        else
+            {
+             System.out.println("Incorrect Username and/or Password...cannot set");
+            }//end else
+        
         }//end setYearReleased
         }//end class Song
